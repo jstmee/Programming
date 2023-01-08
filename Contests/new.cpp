@@ -1,30 +1,18 @@
 #include<bits/stdc++.h>
-#define int long long
 using namespace std;
-
 void myf(){
-    
-    
-    
-
-
-
-    
-    
-    
-
+    cout<<5<<endl;
 
 }
-
-int32_t main(){
+int main(){
     #ifndef ONLINE_JUDGE
            freopen("input.txt","r",stdin);
            freopen("output.txt","w",stdout);
     #endif
-    int t;cin>>t;
+    int t=1;
+    // cin>>t;
     while(t--){
         myf();
     }
-
     return 0;
 }
