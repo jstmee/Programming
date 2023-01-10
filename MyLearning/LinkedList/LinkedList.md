@@ -19,3 +19,9 @@
 2.Doubly Linked List – one can move or traverse the linked list in both directions (Forward and Backward)
 
 3.Doubly Circular Linked List – A Doubly Circular linked list or a circular two-way linked list is a more complex type of linked list that contains a pointer to the next as well as the previous node in the sequence. The difference between the doubly linked and circular doubly list is the same as that between a singly linked list and a circular linked list. The circular doubly linked list does not contain null in the previous field of the first node.
+
+
+Time Complexity	    Worst Case
+Search	              O(n)
+Insertion	          O(1)
+Deletion	          O(1)
