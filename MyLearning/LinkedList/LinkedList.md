@@ -25,3 +25,7 @@ Time Complexity	    Worst Case
 Search	              O(n)
 Insertion	          O(1)
 Deletion	          O(1)
+
+Search is O(n) because as data is not stored in contiguous memory locations so we have to traverse one by one.
+Insertion and Deletion are O(1) because we have to just link new nodes for Insertion with the previous and next node and dislink exist nodes for deletion from the previous and next nodes without any traversal.
+Auxiliary Space: O(N) [To store dynamic memory]
