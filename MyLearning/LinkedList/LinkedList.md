@@ -1,4 +1,6 @@
 
+A Linked List is a linear data structure which looks like a chain of nodes, where each node is a different element. Unlike Arrays, Linked List elements are not stored at a contiguous location. 
+
 ==Advantages of Linked Lists over arrays:
 1.Dynamic Array.
 2.Ease of Insertion/Deletion.
