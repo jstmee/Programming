@@ -3,33 +3,47 @@
 using namespace std;
 
 void myf(){
-    
-    int n;cin>>n;
-    string s;cin>>s;
-    int count=0;
-    int ans=INT_MAX;
-    for(int i=0;i<n;i++){
-        if(s[i]!='a' && s[i]!='e' && s[i]!='i' && s[i]!='o' && 
-        s[i]!='u'){
-            count++;
-            ans=max(ans,count);
+    string a,b;
+    cin>>a>>b;
+    int n=a.size();
+    int m=b.size();
+    if(a[0]==b[0]){
+        cout<<"YES"<<endl;
+        cout<<a[0]<<"*"<<endl;
+        return;
 
-        }
-        else{
-            count=0;
+    }
+    if(a[n-1]==b[m-1]){
+        cout<<"YES"<<endl;
+        cout<<"*"<<b[m-1]<<endl;
+        return;
+    }
+    bool z=0;
+    string ans;
+    for(int i=0;i<n-1;i++){
+        string p="";
+        p.push_back(a[i]);
+        p.push_back(a[i+1]);
+        if(b.find(p)!=std::string::npos){
+            ans=p;
+            z=1;
+            break;
+
+
         }
         
     }
-    if(ans>=4){
+    if(z){
+        cout<<"YES"<<endl;
+        cout<<"*"<<ans<<"*"<<endl;
+        return;
+    }
+    else{
         cout<<"NO"<<endl;
         return;
     }
-    cout<<"YES"<<endl;
-    
-    
 
 
-    
 
 }
 int32_t main(){
