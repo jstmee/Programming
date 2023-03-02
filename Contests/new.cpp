@@ -3,44 +3,49 @@
 using namespace std;
 
 void myf(){
-    string a,b;
-    cin>>a>>b;
-    int n=a.size();
-    int m=b.size();
-    if(a[0]==b[0]){
-        cout<<"YES"<<endl;
-        cout<<a[0]<<"*"<<endl;
-        return;
-
-    }
-    if(a[n-1]==b[m-1]){
-        cout<<"YES"<<endl;
-        cout<<"*"<<b[m-1]<<endl;
-        return;
-    }
-    bool z=0;
-    string ans;
-    for(int i=0;i<n-1;i++){
-        string p="";
-        p.push_back(a[i]);
-        p.push_back(a[i+1]);
-        if(b.find(p)!=std::string::npos){
-            ans=p;
-            z=1;
-            break;
-
-
+    int n;cin>>n;
+    vector<pair<int,int>> v(n);
+    bool check=false;
+    int mini=INT32_MAX;
+    int maxi=INT32_MIN;
+    for(int i=0;i<n;i++){
+        cin>>v[i].first;
+        v[i].second=i+1;
+        if(v[i].first==1){
+            check=true;
         }
-        
+        mini=min(mini,v[i].first);
+        maxi=max(maxi,v[i].first);
     }
-    if(z){
-        cout<<"YES"<<endl;
-        cout<<"*"<<ans<<"*"<<endl;
-        return;
+
+    if(check){
+        if(mini==maxi){
+            cout<<0<<endl;
+            return;
+        }
+        else{
+            cout<<-1<<endl;
+            return;
+        }
     }
-    else{
-        cout<<"NO"<<endl;
-        return;
+    
+    int ans=0;
+    sort(v.begin(),v.end());
+    vector<pair<int,int>> ij;
+    while(v[0].first!=v[n-1].first){
+        if(v[n-1].first!=2){
+            v[n-1].first=ceil((double)v[n-1].first/v[0].first);
+            ans++;
+            ij.push_back({v[n-1].second,v[0].second});
+            sort(v.begin(),v.end());
+        }
+        else {
+            continue;
+        }
+    }
+    cout<<ans<<endl;
+    for(auto p:ij){
+        cout<<p.first<<" "<<p.second<<endl;
     }
 
 

@@ -1,10 +1,3 @@
-YES
-*b
-YES
-*co*
-NO
-YES
-a*
-YES
-a*
-NO
+2
+1 3
+2 1
