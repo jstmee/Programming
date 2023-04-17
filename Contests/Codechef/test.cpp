@@ -1,79 +1,52 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 #define int long long
 using namespace std;
 
-
-void myf(){
-    int n;cin>>n;
-    string s;cin>>s;
-    
-    string temp="";
-    temp.push_back(s[0]);
-    
-    
-    
-    for(int i=1;i<n-1;i++){
-        char p=temp[temp.size()-1];
-        if(p!=s[i]){
-            temp.push_back('1');
-        }
-        else{
-            temp.push_back('0');
-
+vector<int> findPrefixScore(vector<int>& nums) {
+        
+        int maxi=0;
+        vector<int> conver(nums.size());
+        for(int i=0;i<nums.size();i++){
+            maxi=max(maxi,nums[i]);
+            
+            conver[i]=nums[i]+maxi;
+            
+            
+            
         }
         
-       
-    }
-    // cout<<temp<<" "<<endl;
-
-    //case 1
-    int temp1=1;
-    for(int i=0;i<temp.size();i++){
-
-        if(temp[i]=='0'){
-            temp1++;
+        vector<int> ans(nums.size(),0);
+        ans[0]=conver[0];
+        for(int i=1;i<nums.size();i++){
+            ans[i]=ans[i-1]+conver[i];
         }
-        // else{
-        //     continue;
-        // }
-
-
+        
+        return ans;
+        
     }
 
-    int temp2=0;
-    for(int i=0;i<n-1;i++){
+void myf(){
 
-        if(temp[i]=='1'){
-            temp2++;
-        }
-        // else{
-        //     continue;
-        // }
+    vector<int> grid={ 1,1,2,4,8,16   };
 
-
+    vector<int> ans=findPrefixScore(grid);
+    for(auto p: ans){
+        cout<<p<<" ";
     }
-
-    cout<<max(temp1,temp2)<<endl;return;
-
+    cout<<endl;
     
     
-    
-
-
 }
-
-
-
-int32_t main(){
+int32_t main() {
+	// your code goes here
     #ifndef ONLINE_JUDGE
            freopen("D:\\Programming\\C++ Programming\\input.txt","r",stdin);
            freopen("D:\\Programming\\C++ Programming\\output.txt","w",stdout);
     #endif
-    int t;
-    cin>>t;
-    
-    while(t--){
-        myf();
-    }
-    return 0;
+	int t=1;
+    // cin>>t;
+	while(t--){
+	    myf();
+	}
+	return 0;
 }
