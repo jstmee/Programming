@@ -2,39 +2,24 @@
 #define int long long
 using namespace std;
 
-vector<int> findPrefixScore(vector<int>& nums) {
-        
-        int maxi=0;
-        vector<int> conver(nums.size());
-        for(int i=0;i<nums.size();i++){
-            maxi=max(maxi,nums[i]);
-            
-            conver[i]=nums[i]+maxi;
-            
-            
-            
-        }
-        
-        vector<int> ans(nums.size(),0);
-        ans[0]=conver[0];
-        for(int i=1;i<nums.size();i++){
-            ans[i]=ans[i-1]+conver[i];
-        }
-        
-        return ans;
-        
-    }
 
 void myf(){
-
-    vector<int> grid={ 1,1,2,4,8,16   };
-
-    vector<int> ans=findPrefixScore(grid);
-    for(auto p: ans){
-        cout<<p<<" ";
+    int n;cin>>n;
+    string s;cin>>s;
+    for(int i=0;i<n;i=i+2){
+        if(i+1<n){
+            swap(s[i],s[i+1]);
+            
+        }
+            
     }
-    cout<<endl;
-    
+    // char p=123-(s[0]-'a');
+    for(int i=0;i<n;i++){
+        
+        char p=123-(s[i]-'a')-1;
+        s[i]=p;
+    }
+    cout<<s<<endl;
     
 }
 int32_t main() {
@@ -44,7 +29,7 @@ int32_t main() {
            freopen("D:\\Programming\\C++ Programming\\output.txt","w",stdout);
     #endif
 	int t=1;
-    // cin>>t;
+    cin>>t;
 	while(t--){
 	    myf();
 	}
