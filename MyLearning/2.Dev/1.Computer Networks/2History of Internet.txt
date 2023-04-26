@@ -1,0 +1,29 @@
+
+#History
+
+-1957s
+soviet union(now russia)
+launch first sateliete sputnik
+
+later US gov launch ARPA(Advanced Researcher Project agecies)
+
+-1960-70s
+arpa facilies was so big that computers were not able to interact with each other
+therfore built a communication system for apra computer to communicate
+
+-1969s
+born ARPANET
+
+-1980s
+they starting arpanet to a new protocol instead of new protocol(migrate)  ie tcp/ip.
+at that time arpanet is known as internet technically us advanced is reason for internet
+
+-1990s
+CERN they was using hyperlink based document anchor tag
+they felt need for communication
+
+there was a guy time burnelee introduced www
+was network where they used to store hyperlink based document
+
+then few initial browser came into the pictures
+mosiac and netscape

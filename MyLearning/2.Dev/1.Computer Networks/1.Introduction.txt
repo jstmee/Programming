@@ -1,0 +1,18 @@
+
+Computer networks----
+
+
+#network???
+it is a group or sytem of interconnected group or items
+eg railway network,social media
+
+
+#Computer Network???
+it is a networks of Computer
+computer connected with each other with cable or wireless is called computer nertworks
+and why we need it???
+because we want to communicate,share files/resources etc
+
+#Internet????
+Internet is a network of computer networks(samall bunch of computer networks)
+or it is a complex web of interconnected computer networks
