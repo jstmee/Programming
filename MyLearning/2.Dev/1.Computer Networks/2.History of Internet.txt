@@ -15,7 +15,7 @@ therfore built a communication system for apra computer to communicate
 born ARPANET
 
 -1980s
-they starting arpanet to a new protocol instead of new protocol(migrate)  ie tcp/ip.
+they starting arpanet to a new protocol(set of rules to communicate over a network ex http,udp,tcp/ip etc) instead of new protocol(migrate)  ie tcp/ip.
 at that time arpanet is known as internet technically us advanced is reason for internet
 
 -1990s
