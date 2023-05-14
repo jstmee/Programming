@@ -4,17 +4,24 @@ using namespace std;
 
 
 void myf(){
-    int n,k;cin>>n>>k;
+    int n;cin>>n;
     vector<int> v(n);
     for(int i=0;i<n;i++){
         cin>>v[i];
-        
     }
-
+    int ans=0;
+    int cans=0;
+    for(int i=0;i<n;i++){
     
-    
-
-
+        if(v[i]==0){
+            ans++;
+            cans=max(cans,ans);
+        }
+        if(v[i+1]==1){
+            ans=0;
+        }
+    }
+    cout<<cans<<endl;
 
 
 }

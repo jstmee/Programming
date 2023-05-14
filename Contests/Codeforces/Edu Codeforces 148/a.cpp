@@ -4,16 +4,23 @@ using namespace std;
 
 
 void myf(){
-    int n,k;cin>>n>>k;
-    vector<int> v(n);
-    for(int i=0;i<n;i++){
-        cin>>v[i];
-        
+
+    string s;cin>>s;
+    int n=s.size();
+    int i=0;
+    int j=n-1;
+    set<char> myset;
+    while(i<j){
+
+        myset.insert(s[i]);
+        i++;
+        j--;
+
     }
-
-    
-    
-
+    if(myset.size()>1){
+        cout<<"YES"<<endl;return;
+    }
+    cout<<"NO"<<endl;
 
 
 

@@ -2,76 +2,59 @@
 #define int long long
 using namespace std;
 
-void bfs(int node,vector<int> &vis,
-vector<int> adj[],vector<int> &ans){
 
-    queue<int> q;
-    q.push(node);
+void dfs(int node,vector<int> &vis,vector<int> adj[],
+vector<int> &ans){
     vis[node]=1;
-    while(!q.empty()){
-        int nnode=q.front();
-        ans.push_back(nnode);
-        q.pop();
-        for(auto it:adj[nnode]){
-            if(!vis[it]){
-                vis[it]=1;
-                q.push(it);
-            }
+    ans.push_back(node);
+    for(auto it:adj[node]){
+        if(!vis[it]){
+            dfs(it,vis,adj,ans);
         }
     }
+
+
 }
 void myf(){
-    int nofv;cin>>nofv;
-    vector<int> v(nofv);
-    for(int i=0;i<nofv;i++){
-        cin>>v[i];
-    }
-
-    vector<int> adj[nofv+2];
-    for(int i=1;i<=nofv-1;i++){
+    int n;cin>>n;
+    int villages=n+1;
+    vector<int> adj[villages];
+    for(int i=0;i<n-1;i++){
         adj[i].push_back(i+1);
-
     }
-    for(int i=0;i<nofv;i++){
+    vector<int> v(n);
+    for(int i=0;i<n;i++){
+        cin>>v[i];
         if(v[i]==0){
-            adj[i+1].push_back(nofv+1);
-
+            adj[i].push_back(n);
         }
         else{
-            adj[nofv+1].push_back(i+1);
+            adj[n].push_back(i);
         }
     }
     
-    vector<int> ans;
-    for(int i=1;i<=nofv+1;i++){
-        vector<int> vis(nofv+2,0);
-        if(!vis[i]){
-            int check=0;
-            bfs(i,vis,adj,ans);  
-            for(int i=1;i<=nofv+1;i++){
-                if(vis[i]!=0){
-                    check=1;
-                }
+    
+    
+    for(int i=0;i<=n;i++){
+        vector<int > ans;
+        vector<int> vis(villages+1,0);
+        vector <int> path(villages+1,0);
+        dfs(i,vis,adj,ans);
+        if(ans.size()==villages ){
+            for(auto it:ans){
+                cout<<it+1<<" ";
             }
-            if(check){
-                continue;
-            } 
-            else {
-                for(auto it:ans){
-                    cout<<it<<" ";
-                }
-                cout<<endl;
-                return;
-            }     
+            cout<<endl;
+            return;
         }
 
-        cout<<-1<<endl;
-
-
-
+        
     }
+    cout<< -1<<endl;return;
+
     
-    
+
+
 
 
 

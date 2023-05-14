@@ -4,16 +4,15 @@ using namespace std;
 
 
 void myf(){
-    int n,k;cin>>n>>k;
-    vector<int> v(n);
-    for(int i=0;i<n;i++){
-        cin>>v[i];
-        
+    string s;cin>>s;
+    string ss="codeforces";
+    int ans=0;
+    for(int i=0;i<s.size();i++){
+        if(s[i]!=ss[i]){
+            ans++;
+        }
     }
-
-    
-    
-
+    cout<<ans<<endl;return;
 
 
 
