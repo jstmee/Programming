@@ -2,34 +2,33 @@
 #define int long long
 using namespace std;
 
-/*
-submitted
-https://atcoder.jp/contests/abc274/tasks/abc274_c
-
-*/
 
 void myf(){
+    int n,k;cin>>n>>k;
 
-    int n;cin>>n;
-    vector<int> v(n);
-    for(int i=0;i<n;i++){
-        cin>>v[i];
-    }
-    vector<int> dp(2*n+2,0);
-    for(int i=0;i<n;i++){
+    vector<int> v(n+1,0);
+    v[1]=v[n]=1;
+    int temp=k+1;
 
-        dp[2*i+2]=dp[v[i]]+1;
-        dp[2*i+3]=dp[v[i]]+1;
+    for(int i=1;i<=n;i++){
+        if(i==temp){
+            v[i]=1;
+            temp+=k;
+        }
+        
         
     }
-
-    for(int i=1;i<=2*n+1;i++){
-        cout<<dp[i]<<endl;
+    int ans=0;
+    for(int i=1;i<=n;i++){
+        if(v[i]==1){
+            ans++;
+        }
     }
-
-
+    cout<<ans<<endl;
+    
 
     
+
 
 
 }
@@ -41,8 +40,8 @@ int32_t main(){
            freopen("D:\\Programming\\C++ Programming\\input.txt","r",stdin);
            freopen("D:\\Programming\\C++ Programming\\output.txt","w",stdout);
     #endif
-    int t=1;
-    // cin>>t;
+    int t;
+    cin>>t;
     
     while(t--){
         myf();
