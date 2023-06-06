@@ -1,70 +1,43 @@
 #include<bits/stdc++.h>
 #define int long long
 using namespace std;
+
+
+/*
+
+
+v[1]*v[2]+v[1]*v[3].....
++v[2]*v[3]+v[2]*v[4]...
++v[3]*v[4]+v[3]*v[5]...
++......
++v[n-1]*v[n]
+v[1](v[2]+v[3]+.....+v[n])
++v[2]*(v[3]+v[4]+....+v[n])
++v[3]*()
+
+
+*/
 void myf(){
-    int n,m;cin>>n>>m;
-    vector<vector<char>> matrix(n,vector<char> (m));
-    queue<pair<int,int>> q;
-    vector<vector<int>> vis(n,vector<int> (m,0));
-    pair<int,int> end,start;
+    
+    int n;cin>>n;
+    vector<int> v(n);
     for(int i=0;i<n;i++){
-        for(int j=0;j<m;j++){
-            cin>>matrix[i][j];
-            if(matrix[i][j]=='A'){
-                q.push({i,j});
-                vis[i][j]=1;
-                start={i,j};
-            }
-            if(matrix[i][j]=='B'){
-                end={i,j};
-            }
-        }
+        cin>>v[i];
     }
-    map<pair<int,int>,pair<pair<int,int>,char>> parent;
-    int dr[]={-1,0,1,0};
-    int dc[]={0,1,0,-1};
-    vector<char> allmoves={'U','R','D','L'};
-    bool check=false;
-    while(!q.empty()){
-        int r=q.front().first;
-        int c=q.front().second;
-        if(end==make_pair(r,c)){
-            check=true;
-            break;
-        }
-        q.pop();
-        for(int i=0;i<4;i++){
-            int nrow=r+dr[i];
-            int ncol=c+dc[i];
-            
-            if(nrow>=0 && nrow<n && ncol>=0 && ncol<m && (matrix[nrow][ncol]=='.'|| matrix[nrow][ncol]=='B') && !vis[nrow][ncol]){
-                vis[nrow][ncol]=1;
-                q.push({nrow,ncol});
-                parent[{nrow,ncol}]={{r,c},allmoves[i]};
-            }
-        }
+    int mod=1e9+7;
+    vector<int> suffix(n+1,0);
+    for(int i=n-1;i>=0;i--){
+        suffix[i]=(suffix[i+1]%mod+v[i]%mod)%mod;
     }
-    if(check){
-        cout<<"YES"<<endl;
-        string ans="";
-        while(true){
-            auto it=parent[{end.first,end.second}];
-            ans.push_back(it.second);
-            int p=it.first.first;
-            int q=it.first.second;
-            end={p,q};
-            if(p==start.first && q==start.second){
-                break;
-            }
-        }
-        reverse(ans.begin(),ans.end());
-        cout<<ans.size()<<endl;
-        cout<<ans<<endl;
-        
+    
+    int ans=0;
+    for(int i=0;i<=n-2;i++){
+        int suffixsum=suffix[i+1]%mod;
+        int p=v[i]%mod;
+        ans+=(suffixsum*p)%mod;
+        // ans=(ans+(suffixsum*p)%mod)%mod;
     }
-    else {
-        cout<<"NO"<<endl;
-    }
+    cout<<ans%mod<<endl;
     
     
     
