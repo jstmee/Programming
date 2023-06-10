@@ -1,0 +1,3 @@
+types of variables
+
+1.loc
