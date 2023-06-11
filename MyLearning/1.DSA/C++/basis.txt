@@ -1,3 +1,38 @@
 types of variables
 
-1.loc
+1.local variables
+2.instance variables
+3.static variables
+
+1.local variables 
+jo variables kisi function ya block  ke andar likhte hai 
+yeh tabhi create hote hai jab program funcition ya bloc ke andar ata hai
+aur destory bhi tab hote hai jab function return ho jata hia ya block katm ho jata hai
+function or block ke andar he use hote hia yeh bass
+example jo bhi function define karete hi vohi hai
+
+2.instance variables 
+related to class jiske hum different data type initialize karte hai
+yeh non static variables hote hai aur yeh instatance of class koi belong karte hai jo function ya constructor or block ke bhar declare hote hai.
+variables are created when object is created and when object is destroyed it get destroyed.
+example koi bhi class jo hum banate hai.
+
+3. static variables
+yeh static keywrod se declare hote hia kis bhi class ke andar aur function contrictor or block ke bhar.
+space ek baar he alocate hote hai hai aur ek single copy he hoti hia kisi bhi class ke liye.
+yeh program ke start me he crate ho jate hai aur program ke end me destroy hote hai
+
+example 
+class{
+    static int x;
+
+    void func(){
+        ++x;
+    }
+
+};
+
+
+
+cin stop kab karta hai input lena
+ans is space and newline
