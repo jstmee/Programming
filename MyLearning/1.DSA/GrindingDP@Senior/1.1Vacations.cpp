@@ -2,9 +2,6 @@
 #define int long long
 using namespace std;
 
-/*
-https://codeforces.com/problemset/problem/698/A
-*/
 int myans(int i,vector<int> &v,int prev,int n){
 
     if(i>=n){
@@ -14,9 +11,7 @@ int myans(int i,vector<int> &v,int prev,int n){
     if(v[i]==0){
         ans=min(ans,1+myans(i+1,v,0,n));
     }
-
     else if(v[i]==1){
-
         if(prev==1){
             ans=min(ans,1+myans(i+1,v,0,n));
         }
@@ -33,7 +28,8 @@ int myans(int i,vector<int> &v,int prev,int n){
         else{
             int ans1=myans(i+1,v,2,n);
             int ans2=1+myans(i+1,v,0,n);
-            ans=min(ans,min(ans1,ans2));
+            
+            ans=min(ans1,ans2);
         }
     }
     else{
@@ -41,11 +37,23 @@ int myans(int i,vector<int> &v,int prev,int n){
             int ans1=1+myans(i+1,v,0,n);
             int ans2=myans(i+1,v,1,n);
             int ans3=myans(i+1,v,2,n);
-
-            int temp=min(ans1,min(ans2,ans3));
-            ans=min(ans,temp);
+            
+            ans=min({ans1, ans2, ans3});
+        }
+        else if(prev==1){
+            int ans1=1+myans(i+1,v,0,n);
+            int ans2=myans(i+1,v,2,n);
+            
+            ans=min(ans1, ans2);
+        }
+        else if(prev==2){
+            int ans1=1+myans(i+1,v,0,n);
+            int ans2=myans(i+1,v,1,n);
+            
+            ans=min(ans1, ans2);
         }
     }
+    
     return ans;
 }
 
@@ -76,7 +84,11 @@ void myf(){
         int ans3=myans(1,v,2,n);
         cout<<min(ans1,min(ans2,ans3))<<endl;return;
     }
+    
 }
+
+
+
 int32_t main(){
     #ifndef ONLINE_JUDGE
            freopen("D:\\Programming\\C++ Programming\\input.txt","r",stdin);
@@ -84,6 +96,7 @@ int32_t main(){
     #endif
     int t=1;
     // cin>>t;
+    
     while(t--){
         myf();
     }
