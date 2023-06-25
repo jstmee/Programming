@@ -4,15 +4,29 @@ using namespace std;
 
 
 void myf(){
-    // int k,s;cin>>k>>s;
-    // for(int x=0;x<=3000;x++){
-    //     for(int y=0;y<=3000;y++){
-    //         for(int Z=0;z<=3000;z++){
-    //             if(x+y+z<=3*)
-    //         }
-    //     }
-
-    // }
+    int n;cin>>n;
+    vector<string> v(n);
+    for(int i=0;i<n;i++){
+        string s;cin>>s;
+        v[i]=s;
+    }
+    reverse(v.begin(),v.end());
+    map<string,int> mp;
+    vector<string> ans;
+    for(int i=0;i<n;i++){
+        mp[v[i]]++;
+        if(mp[v[i]]==1){
+            ans.push_back(v[i]);
+        }
+        
+    }
+    string myans="";
+    for(auto it:ans){
+        int sz=it.size();
+        myans.push_back(it[sz-2]);
+        myans.push_back(it[sz-1]);
+    }
+    cout<<myans<<endl;
 
 
 }
@@ -25,7 +39,7 @@ int32_t main(){
            freopen("D:\\Programming\\C++ Programming\\output.txt","w",stdout);
     #endif
     int t=1;
-    // cin>>t;
+    cin>>t;
     
     while(t--){
         myf();
