@@ -9,7 +9,6 @@ https://codeforces.com/problemset/problem/913/B
 accepted
 
 */
-
 bool dfs(int node, int parent, vector<int> &leaf, vector<int> adj[])
 {
     if (leaf[node] != 0)
