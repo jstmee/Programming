@@ -4,7 +4,7 @@ using namespace std;
 
 /*
 https://cses.fi/problemset/task/1674
-
+ACCECPTED
 */
 
 void dfs(int node,int parent,vector<int> &leaf,vector<int> adj[]){
