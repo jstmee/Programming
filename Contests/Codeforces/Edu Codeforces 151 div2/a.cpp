@@ -2,7 +2,7 @@
 #define int long long
 using namespace std;
 
-bool f(int i,int n,int target,vector<int> &v,vector<int> ans,vector<int> &temp,vector<vector<int>> &dp){
+bool f(int i,int n,int target,vector<int> &v,vector<int> ans,vector<int> &temp){
     if(target<0){
         return false;
     }
@@ -23,14 +23,14 @@ bool f(int i,int n,int target,vector<int> &v,vector<int> ans,vector<int> &temp,v
             return false;
         }
     }
-    if(dp[i][target]!=-1){
-        return dp[i][target];
-    }
+    // if(dp[i][target]!=-1){
+    //     return dp[i][target];
+    // }
     ans.push_back(v[i]);
-    bool take=f(i,n,target-v[i],v,ans,temp,dp);
+    bool take=f(i,n,target-v[i],v,ans,temp);
     ans.pop_back();
-    bool nottake=f(i+1,n,target,v,ans,temp,dp);
-    return dp[i][target]=(take||nottake);
+    bool nottake=f(i+1,n,target,v,ans,temp);
+    return (take||nottake);
 
 }
 
@@ -45,8 +45,8 @@ void myf(){
     }
     int sz=v.size();
     vector<int> ans;
-    vector<vector<int>> dp(sz+1,vector<int> (n+1,-1));
-    bool check=f(0,sz,n,v,{},ans,dp);
+    // vector<vector<int>> dp(sz+1,vector<int> (n+1,-1));
+    bool check=f(0,sz,n,v,{},ans);
     if(check){
         cout<<"YES"<<endl;
         cout<<ans.size()<<endl;
