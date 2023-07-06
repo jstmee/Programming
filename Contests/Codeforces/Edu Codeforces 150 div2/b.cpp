@@ -10,27 +10,48 @@ void myf(){
     for(int i=0;i<n;i++){
         cin>>q[i];
     }
-    string s="1";
-    bool check=true;
-    for(int i=1;i<n;i++){
-        if(q[i]>=q[i-1] && check){
-            s.push_back('1');
+    int check=1;
+    vector<int > ans;
+    for(int i=0;i<n;i++){
+
+        if(i==0){
+            ans.push_back(q[i]);
+            cout<<1;
         }
         else{
-            check=false;
-            if(i==1){
-                s.push_back('1');
-                continue;
-            }
-            if(q[0]>=q[i] && q[i-1]<=q[i]){
-                s.push_back('1');
+            if(ans.back()<=q[i] && check){
+                ans.push_back(q[i]);
+                cout<<1;
+
             }
             else{
-                s.push_back('0');
+                if(ans.back()>q[i] &&check){
+                    if(q[i]<=ans[0]){
+                        check=0;
+                        ans.push_back(q[i]);
+                        cout<<1;
+                    }
+                    else{
+                        cout<<0;
+                    }
+                }
+                else{
+                    if(ans.back()<=q[i] && ans[0]>=q[i]){
+                        ans.push_back(q[i]);
+                        cout<<1;
+                    }
+                    else{
+                        cout<<0;
+    
+                    }
+
+                }
             }
         }
+
     }
-    cout<<s<<endl;return;
+    cout<<endl;
+    
 
 
 
