@@ -9,17 +9,33 @@ void myf(){
     for(int i=0;i<n;i++){
         cin>>v[i];
     }
-    int temp=1;
-    int ans=0;
-
-    for(int i=0;i<n;i++){
+    int temp=v[0];
+    for(int i=1;i<n;i++){
         temp=temp&v[i];
-        if(temp==0){
-            ans++;
-        }
-
     }
-    cout<<ans<<endl;
+    if(temp!=0){
+        cout<<1<<endl;
+        return;
+    }
+    int temp2=v[0];
+    int ans=0;
+    for(int i=1;i<n;i++){
+        if(temp2==0){
+            ans++;
+            temp2=v[i];
+        }
+        else{
+            temp2=temp2&v[i];
+        }
+    }
+    if(temp2==0){
+        cout<<ans+1<<endl;return;
+    }
+    else{
+        cout<<ans<<endl;
+    }
+    
+
 
 
 }
