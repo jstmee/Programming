@@ -2,75 +2,30 @@
 #define int long long
 using namespace std;
 
-bool check(string s){
-    string p=s;
-    reverse(s.begin(),s.end());
-    if(p==s){
-        reverse(s.begin(),s.end());
-        return true;
-    }
-    reverse(s.begin(),s.end());
-    return false;
-}
-bool solve(int i,string s,int n){
-    
-    if(s.size()==1){
-        return true;
-    }
-    
-    if(i==n-2){
-        if(s.size()==1){
-            return true;
+int maxDistance(int arr[], int n){
+        map<int,pair<int,int>> mp;
+        for(int i=0;i<n;i++){
+            int temp=arr[i];
+            if(mp.find(temp)==mp.end()){
+                mp[temp]={i,-1};
+            }
+            else{
+                mp[temp].second=i;
+            }
         }
-        string temp="";
-        for(int i=0;i<n-3;i++){
-            temp+=s[i];
-            
+        int ans=0;
+        for(auto it:mp){
+            if(it.second.second!=-1){
+                max(ans,it.second.second-it.second.first);
+            }
         }
-        if(check(temp)){
-            return true;
-        }
-        
-        return false;
-        
-        
-        
+        return ans;
     }
-    //case 1 remove it 
-    string p="";
-    for(int j=0;j<i-1;j++){
-        p+=s[j];
-    }
-    for(int j=i+2;j<n;j++){
-        p+=s[j];
-    }
-    if(check(p)){
-        return true;
-    }
-    if(solve(i+1,p,n)){
-        return true;
-    }
-    
-    
-    //case 2 
-    if(solve(i+1,s,n)){
-        return true;
-    }
-    
-    return false;
-    
-}
 void myf(){
-    
-    int n;cin>>n;
-    string s;cin>>n;
-    if(check(s)){
-        cout<<"YES"<<endl;return;
-    }
-    if(solve(1,s,n)){
-        cout<<"YES"<<endl;return;
-    }
-    cout<<"NO"<<endl;
+
+    int p[]={1,1,2,2,2,1};
+    int n=6;
+    cout<<maxDistance(p,n)<<endl;
     
 
 
@@ -84,7 +39,7 @@ int32_t main(){
            freopen("D:\\Programming\\C++ Programming\\output.txt","w",stdout);
     #endif
     int t=1;
-    cin>>t;
+    // cin>>t;
     
     while(t--){
         myf();

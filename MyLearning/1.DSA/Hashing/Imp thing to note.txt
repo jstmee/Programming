@@ -1,0 +1,8 @@
+
+
+
+imp points
+1.In unordered_map<> keys are not sorted and insertion of particular key takes O(1).
+2.In map<> keys are in sorted order and the insertion of particular key will take O(logn).
+
+
