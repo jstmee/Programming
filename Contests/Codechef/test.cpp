@@ -2,30 +2,33 @@
 #define int long long
 using namespace std;
 
-int maxDistance(int arr[], int n){
-        map<int,pair<int,int>> mp;
-        for(int i=0;i<n;i++){
-            int temp=arr[i];
-            if(mp.find(temp)==mp.end()){
-                mp[temp]={i,-1};
-            }
-            else{
-                mp[temp].second=i;
-            }
+int hIndex(vector<int>& citations) {
+
+        unordered_map<int,int> mp;
+        for(auto it:citations){
+            mp[it]++;
         }
         int ans=0;
-        for(auto it:mp){
-            if(it.second.second!=-1){
-                max(ans,it.second.second-it.second.first);
+        int temp=-1;
+        for(int i=1;i<=1000;i++){
+            int c1=0;
+            for(auto it:mp){
+                if(it.first>=i){
+                    c1++;
+                }
+            }
+            if(ans<=c1){
+                ans=c1;
+                temp=i;
             }
         }
-        return ans;
+        return temp;
+        
     }
 void myf(){
 
-    int p[]={1,1,2,2,2,1};
-    int n=6;
-    cout<<maxDistance(p,n)<<endl;
+    vector<int> p={3,0,6,1,5};
+    cout<<hIndex(p)<<endl;
     
 
 
