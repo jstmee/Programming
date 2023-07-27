@@ -2,33 +2,37 @@
 #define int long long
 using namespace std;
 
-int hIndex(vector<int>& citations) {
 
-        unordered_map<int,int> mp;
-        for(auto it:citations){
-            mp[it]++;
-        }
-        int ans=0;
-        int temp=-1;
-        for(int i=1;i<=1000;i++){
-            int c1=0;
-            for(auto it:mp){
-                if(it.first>=i){
-                    c1++;
+string removeDuplicates(string s) {
+
+        stack<char> st;
+        int n=s.size();
+        for(int i=0;i<n;i++){
+
+            st.push(s[i]);
+            
+            while(true){
+                if(i!=n && st.top()==s[i+1]){
+                    st.pop();
+                    i+=2;
+                }
+                else{
+                    break;
                 }
             }
-            if(ans<=c1){
-                ans=c1;
-                temp=i;
-            }
         }
-        return temp;
+        string ans="";
+        while(!st.empty()){
+            ans.push_back(st.top());
+            st.pop();
+        }
+        reverse(ans.begin(),ans.end());
+        return ans;
         
     }
 void myf(){
-
-    vector<int> p={3,0,6,1,5};
-    cout<<hIndex(p)<<endl;
+    
+    cout<<removeDuplicates("azxxzy")<<endl;
     
 
 
