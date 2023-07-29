@@ -18,3 +18,10 @@ Project
 1 rest API
 2 20 project make any 3 
 3 CSV to db using spring batch
+
+Nojes doc 
+Tutorial 2 
+Mongodb basic cmd 
+Nojes mongodb 
+Project 
+2,4,6,7

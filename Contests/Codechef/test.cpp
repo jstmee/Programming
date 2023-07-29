@@ -3,36 +3,46 @@
 using namespace std;
 
 
-string removeDuplicates(string s) {
+bool solve(long long mid,vector<int> &candies,long long k){
 
-        stack<char> st;
-        int n=s.size();
-        for(int i=0;i<n;i++){
+        int sum=0;
+        for(int i=0;i<candies.size();i++){
 
-            st.push(s[i]);
+            sum+=(candies[i]/mid);
             
-            while(true){
-                if(i!=n && st.top()==s[i+1]){
-                    st.pop();
-                    i+=2;
-                }
-                else{
-                    break;
-                }
+
+        }
+        return sum>=k;
+    }
+int maximumCandies(vector<int>& candies, long long k) {
+
+
+
+        int n=candies.size();
+        
+        int i=1,j=1e7;
+        while(i<j){
+            long long mid=i+(j-i)/2;
+
+     
+            if(solve(mid,candies,k)){
+
+                i=mid;
+
+            }
+            else{
+                j=mid-1;
             }
         }
-        string ans="";
-        while(!st.empty()){
-            ans.push_back(st.top());
-            st.pop();
-        }
-        reverse(ans.begin(),ans.end());
-        return ans;
+
+        return j-1;
         
-    }
+}
 void myf(){
-    
-    cout<<removeDuplicates("azxxzy")<<endl;
+
+    vector<int> temp={10000000};
+    long long k=1;
+    cout<<maximumCandies(temp,k)<<endl;
     
 
 

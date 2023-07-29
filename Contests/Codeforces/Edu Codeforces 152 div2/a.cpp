@@ -5,6 +5,40 @@ using namespace std;
 
 void myf(){
 
+    int a,b,c;cin>>a>>b>>c;
+    int ans=2;
+    a-=2;
+    while(true){
+
+        if(b>0){
+            ans++;
+            b--;
+            if(a>0){
+                ans++;
+                a--;
+            }
+            else{
+                break;
+            }
+        }
+        else{
+            if(c>0){
+                ans++;
+                c--;
+                if(a>0){
+                    ans++;
+                    a--;
+                }
+                else{
+                    break;
+                }
+            }
+
+        }
+        
+    }
+    cout<<ans<<endl;
+
 
 }
 
