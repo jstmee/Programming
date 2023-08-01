@@ -1,0 +1,10 @@
+
+question1
+sort the array of 0s and 1 
+link-https://www.codingninjas.com/studio/problems/move-all-negative-numbers-to-beginning-and-positive-to-end_1112620
+hint two pointers method most efficient method
+
+question2
+rotate array
+link-https://leetcode.com/problems/rotate-array/
+hint revering the array two time
