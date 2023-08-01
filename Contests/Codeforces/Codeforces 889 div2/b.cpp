@@ -5,18 +5,23 @@ using namespace std;
 
 void myf(){
     int n;cin>>n;
-    vector<int> v(n);
-    int ans=0;
-    for(int i=0;i<n;i++){
-        cin>>v[i];
-        if(v[i]==i+1){
-            ans++;
+    int ans=INT_MIN;
+    for(int i=1;i<=10000;i++){
+        int temp=i;
+        int tempans=0;
+        while(true){
+            if(n%temp==0){
+                temp++;
+                tempans++;
+                ans=max(ans,tempans);
+            }
+            else{
+                break;
+            }
         }
     }
-    if(ans%2==0){
-        cout<<ans/2<<endl;return;
-    }
-    cout<<ans/2+1<<endl;
+    cout<<ans<<endl;
+
 
 
 }

@@ -3,46 +3,56 @@
 using namespace std;
 
 
-bool solve(long long mid,vector<int> &candies,long long k){
-
-        int sum=0;
-        for(int i=0;i<candies.size();i++){
-
-            sum+=(candies[i]/mid);
-            
-
+vector<int> powerfulIntegers(int x, int y, int bound) {
+        unordered_map<int,int> mp1,mp2;
+        int a=1;
+        int b=1;
+        if(x!=1){
+            while(true){
+                if(a>bound){
+                    break;
+                }
+                mp1[a]++;
+                a=a*x;
+            }
         }
-        return sum>=k;
+        else{
+            mp1[a]++;
+        }
+        if(y!=1){
+                while(true){
+                    if(b>bound){
+                        break;
+                    }
+                    mp2[b]++;
+                    b=b*y;
+                }
+        }
+        else{
+            mp2[b]++;
+        }
+        vector<int > ans;
+        for(int i=1;i<=bound;i++){
+            int sum=i;
+            for(auto it:mp1){
+                int rest=sum-it.first;
+                if(mp2.find(rest)!=mp2.end()){
+                    ans.push_back(i);
+                }
+            }
+        }
+        return ans;
+        
     }
-int maximumCandies(vector<int>& candies, long long k) {
-
-
-
-        int n=candies.size();
-        
-        int i=1,j=1e7;
-        while(i<j){
-            long long mid=i+(j-i)/2;
-
-     
-            if(solve(mid,candies,k)){
-
-                i=mid;
-
-            }
-            else{
-                j=mid-1;
-            }
-        }
-
-        return j-1;
-        
-}
 void myf(){
 
-    vector<int> temp={10000000};
-    long long k=1;
-    cout<<maximumCandies(temp,k)<<endl;
+    // vector<int> temp={6,6,6,6};
+    // int k=0;
+    // cout<<distributeCandies(temp)<<endl;
+    auto pp=powerfulIntegers(1,2,100);
+    for(auto it:pp){
+        cout<<it<<" ";
+    }
     
 
 
