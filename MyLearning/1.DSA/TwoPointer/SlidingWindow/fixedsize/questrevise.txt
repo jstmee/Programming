@@ -1,0 +1,12 @@
+
+
+
+1.
+
+hint fix size only
+use of list stl
+https://practice.geeksforgeeks.org/problems/first-negative-integer-in-every-window-of-size-k3345/1
+
+2.
+use of hashing imp
+https://practice.geeksforgeeks.org/problems/count-occurences-of-anagrams5839/1

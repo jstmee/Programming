@@ -3,44 +3,34 @@
 using namespace std;
 
 
-vector<int> powerfulIntegers(int x, int y, int bound) {
-        unordered_map<int,int> mp1,mp2;
-        int a=1;
-        int b=1;
-        if(x!=1){
-            while(true){
-                if(a>bound){
-                    break;
-                }
-                mp1[a]++;
-                a=a*x;
+void solve(int i,int n,vector<int> &ans,string &temp){
+        if(i>n){
+            ans.push_back(stoi(temp));
+            return;
+        }
+        // string temp="";
+        for(int i=0;i<=9;i++){
+            
+            if(temp.size()==0 || temp.back()-'0'>i){
+                char cc=(char)(i+48);
+                temp.push_back(cc);
+                solve(i+1,n,ans,temp);
+                temp.pop_back();
+            }
+            else{
+                return ;
             }
         }
-        else{
-            mp1[a]++;
-        }
-        if(y!=1){
-                while(true){
-                    if(b>bound){
-                        break;
-                    }
-                    mp2[b]++;
-                    b=b*y;
-                }
-        }
-        else{
-            mp2[b]++;
-        }
-        vector<int > ans;
-        for(int i=1;i<=bound;i++){
-            int sum=i;
-            for(auto it:mp1){
-                int rest=sum-it.first;
-                if(mp2.find(rest)!=mp2.end()){
-                    ans.push_back(i);
-                }
-            }
-        }
+    }
+    vector<int> increasingNumbers(int n)
+    {
+        // Write Your Code here
+        vector<int> ans;
+        string p="";
+        solve(1,n,ans,p);
+        // for(auto it:ans){
+        //     cout<<it<<" ";
+        // }
         return ans;
         
     }
@@ -49,7 +39,7 @@ void myf(){
     // vector<int> temp={6,6,6,6};
     // int k=0;
     // cout<<distributeCandies(temp)<<endl;
-    auto pp=powerfulIntegers(1,2,100);
+    auto pp=increasingNumbers(1);
     for(auto it:pp){
         cout<<it<<" ";
     }
