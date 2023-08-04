@@ -9,4 +9,8 @@ https://practice.geeksforgeeks.org/problems/first-negative-integer-in-every-wind
 
 2.
 use of hashing imp
-https://practice.geeksforgeeks.org/problems/count-occurences-of-anagrams5839/1
+https://leetcode.com/problems/find-all-anagrams-in-a-string/?envType=list&envId=e2echix1
+
+3.
+most imppp for fix sizzee imp very imp
+https://www.interviewbit.com/problems/sliding-window-maximum/
