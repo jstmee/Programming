@@ -14,4 +14,6 @@ https://leetcode.com/list/504wrexe/
 revise this question not able to do it
 P9 : https://leetcode.com/problems/find-common-characters/
 
+https://www.geeksforgeeks.org/check-given-array-contains-duplicate-elements-within-k-distance/
+
 P10 : https://www.geeksforgeeks.org/count-pairs-with-given-sum/

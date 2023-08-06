@@ -3,46 +3,68 @@
 using namespace std;
 
 
-void solve(int i,int n,vector<int> &ans,string &temp){
-        if(i>n){
-            ans.push_back(stoi(temp));
-            return;
+long long solve(int i,int n,int k,vector<vector<int> > &items,unordered_set<int> &s){
+        
+        if(k==0){
+            return (s.size())*(s.size());
         }
-        // string temp="";
-        for(int i=0;i<=9;i++){
-            
-            if(temp.size()==0 || temp.back()-'0'>i){
-                char cc=(char)(i+48);
-                temp.push_back(cc);
-                solve(i+1,n,ans,temp);
-                temp.pop_back();
+        if(i>=n){
+            if(k==0){
+                return (s.size())*(s.size());
             }
-            else{
-                return ;
-            }
+            return INT_MIN;
         }
-    }
-    vector<int> increasingNumbers(int n)
-    {
-        // Write Your Code here
-        vector<int> ans;
-        string p="";
-        solve(1,n,ans,p);
-        // for(auto it:ans){
-        //     cout<<it<<" ";
-        // }
-        return ans;
+        
+        
+        
+        //take it
+        int ans1=INT_MIN;
+        s.insert(items[i][1]);
+        ans1=items[i][0]+solve(i+1,n,k-1,items,s);
+        s.erase(items[i][1]);
+        
+        int ans2=INT_MIN;
+        ans2=solve(i+1,n,k,items,s);
+        return max(ans1,ans2);
         
     }
+    long long findMaximumElegance(vector<vector<int>>& items, int k) {
+        
+        
+        int n=items.size();
+        unordered_set<int> s;
+        return solve(0,n,k,items,s);
+        
+    }
+
 void myf(){
 
-    // vector<int> temp={6,6,6,6};
-    // int k=0;
-    // cout<<distributeCandies(temp)<<endl;
-    auto pp=increasingNumbers(1);
-    for(auto it:pp){
-        cout<<it<<" ";
+    int n;cin>>n;
+    vector<int> v(n);
+    // int maxi=INT_MIN;
+    // set<int> s;
+    for(int i=0;i<n;i++){
+        cin>>v[i];
+        // s.insert(v[i]);
+        // maxi=max(maxi,v[i]);
     }
+    for(int j=0;j<=100;j++){
+        int temp=j;
+        v[0]+=temp;
+        int check=0;
+        for(int k=1;k<n;k++){
+            if(v[0]<=v[k]){
+                check=1;
+
+                break;
+            }
+        }
+        if(check==0){
+            cout<<temp<<endl;return;
+        }
+        v[0]-=temp;
+    }
+    
     
 
 
