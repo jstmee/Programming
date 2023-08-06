@@ -1,0 +1,6 @@
+1.https://www.geeksforgeeks.org/check-given-array-contains-duplicate-elements-within-k-distance/  mmvvimp
+article for solution https://www.codingninjas.com/studio/library/check-if-a-given-array-contains-duplicate-elements-within-k-distance-from-each-other
+
+2.https://practice.geeksforgeeks.org/problems/count-pairs-with-given-sum5022/1 VIMP
+
+3.https://leetcode.com/problems/find-common-characters/
