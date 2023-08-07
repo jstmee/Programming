@@ -3,4 +3,31 @@ article for solution https://www.codingninjas.com/studio/library/check-if-a-give
 
 2.https://practice.geeksforgeeks.org/problems/count-pairs-with-given-sum5022/1 VIMP
 
-3.https://leetcode.com/problems/find-common-characters/
+3.https://leetcode.com/problems/find-common-characters/ not able to solve
+
+4.https://leetcode.com/problems/subarray-sum-equals-k/description/  vvvimppp not able to solve
+note it is for negative no. to if positive no then slidiing window will be most optimize also for 0 zero included watch striver videos
+
+5.https://www.geeksforgeeks.org/smallest-subarray-with-sum-k-from-an-array/
+
+6.https://www.codingninjas.com/studio/problems/subarrays-with-xor-k_6826258
+
+7.https://leetcode.com/problems/continuous-subarray-sum/description/
+
+8.https://practice.geeksforgeeks.org/problems/intersection-of-two-arrays2404/1
+follow up question
+https://practice.geeksforgeeks.org/problems/intersection-of-two-linked-list/1
+
+9.https://practice.geeksforgeeks.org/problems/winner-of-an-election-where-votes-are-represented-as-candidate-names-1587115621/1
+
+10.https://practice.geeksforgeeks.org/problems/pairs-with-positive-negative-values3719/1
+
+11.https://leetcode.com/problems/custom-sort-string/description/
+
+12.https://leetcode.com/problems/sort-characters-by-frequency/description/
+
+13.https://leetcode.com/problems/sort-array-by-increasing-frequency/description/
+
+14.https://www.geeksforgeeks.org/count-maximum-points-on-same-line/
+
+

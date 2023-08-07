@@ -1,76 +1,42 @@
 #include<bits/stdc++.h>
 #define int long long
 using namespace std;
-
-
-long long solve(int i,int n,int k,vector<vector<int> > &items,unordered_set<int> &s){
-        
-        if(k==0){
-            return (s.size())*(s.size());
+vector<int> PosNegPair(int arr[], int n) {
+        vector<int> ans={};
+        unordered_map<int,int> mp;
+        for(int i=0;i<n;i++){
+            mp[arr[i]]++;
         }
-        if(i>=n){
-            if(k==0){
-                return (s.size())*(s.size());
+        for(int i=0;i<n;i++){
+            if(mp.find(-(arr[i]))!=mp.end() && mp.find(arr[i])!=mp.end()){
+                if(arr[i]<0){
+                    ans.push_back(arr[i]);
+                    ans.push_back(-arr[i]);
+                }
+                else{
+                    ans.push_back(-arr[i]);
+                    ans.push_back(arr[i]);
+                }
+                mp[arr[i]]--;
+                mp[-arr[i]]--;
+                if(mp[arr[i]]==0){
+                    mp.erase(arr[i]);
+                }
+                if(mp[-arr[i]]==0){
+                    mp.erase(-arr[i]);
+                }
             }
-            return INT_MIN;
         }
-        
-        
-        
-        //take it
-        int ans1=INT_MIN;
-        s.insert(items[i][1]);
-        ans1=items[i][0]+solve(i+1,n,k-1,items,s);
-        s.erase(items[i][1]);
-        
-        int ans2=INT_MIN;
-        ans2=solve(i+1,n,k,items,s);
-        return max(ans1,ans2);
-        
+        return ans;
     }
-    long long findMaximumElegance(vector<vector<int>>& items, int k) {
-        
-        
-        int n=items.size();
-        unordered_set<int> s;
-        return solve(0,n,k,items,s);
-        
-    }
-
 void myf(){
-
-    int n;cin>>n;
-    vector<int> v(n);
-    // int maxi=INT_MIN;
-    // set<int> s;
-    for(int i=0;i<n;i++){
-        cin>>v[i];
-        // s.insert(v[i]);
-        // maxi=max(maxi,v[i]);
+    int n=9;
+    int arr[]={12 ,7 ,-2 ,-11 ,12 ,-12 ,-8 ,3 ,3};
+    auto it=PosNegPair(arr,n);
+    for(auto itt:it){
+        cout<<itt<<" ";
     }
-    for(int j=0;j<=100;j++){
-        int temp=j;
-        v[0]+=temp;
-        int check=0;
-        for(int k=1;k<n;k++){
-            if(v[0]<=v[k]){
-                check=1;
-
-                break;
-            }
-        }
-        if(check==0){
-            cout<<temp<<endl;return;
-        }
-        v[0]-=temp;
-    }
-    
-    
-
-
 }
-
-
 
 int32_t main(){
     #ifndef ONLINE_JUDGE
@@ -79,7 +45,6 @@ int32_t main(){
     #endif
     int t=1;
     // cin>>t;
-    
     while(t--){
         myf();
     }
