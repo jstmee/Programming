@@ -10,9 +10,10 @@ note it is for negative no. to if positive no then slidiing window will be most 
 
 5.https://www.geeksforgeeks.org/smallest-subarray-with-sum-k-from-an-array/
 
-6.https://www.codingninjas.com/studio/problems/subarrays-with-xor-k_6826258
+6.https://www.codingninjas.com/studio/problems/subarrays-with-xor-k_6826258 imp
 
-7.https://leetcode.com/problems/continuous-subarray-sum/description/
+7.https://leetcode.com/problems/continuous-subarray-sum/description/ not able to solve mmmmimpppp
+https://practice.geeksforgeeks.org/problems/longest-subarray-with-sum-divisible-by-k1259/1
 
 8.https://practice.geeksforgeeks.org/problems/intersection-of-two-arrays2404/1
 follow up question
@@ -28,6 +29,19 @@ https://practice.geeksforgeeks.org/problems/intersection-of-two-linked-list/1
 
 13.https://leetcode.com/problems/sort-array-by-increasing-frequency/description/
 
-14.https://www.geeksforgeeks.org/count-maximum-points-on-same-line/
+14.https://www.geeksforgeeks.org/count-maximum-points-on-same-line/ not able to solve
+
+15.https://www.geeksforgeeks.org/find-pairs-given-sum-elements-pair-different-rows/
+note most efficent will be n^2
+
+16.https://www.geeksforgeeks.org/count-quadruples-four-sorted-arrays-whose-sum-equal-given-value-x/
+
+17.https://practice.geeksforgeeks.org/problems/sorting-elements-of-an-array-by-frequency/0
+
+18.https://www.geeksforgeeks.org/find-pairs-b-array-b-k/ not able to solve
+
+19.https://www.geeksforgeeks.org/print-words-together-set-characters/
+
+
 
 
