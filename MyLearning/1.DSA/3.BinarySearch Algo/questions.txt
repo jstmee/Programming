@@ -1,0 +1,12 @@
+1.https://leetcode.com/problems/binary-search/
+
+2.implement lower and upper bounds
+question based on this:https://www.codingninjas.com/studio/problems/lower-bound_8165382
+https://www.codingninjas.com/studio/problems/implement-upper-bound_8165383
+https://www.codingninjas.com/studio/problems/algorithm-to-find-best-insert-position-in-sorted-array_839813
+https://www.codingninjas.com/studio/problems/ceiling-in-a-sorted-array_1825401
+https://www.codingninjas.com/studio/problems/first-and-last-position-of-an-element-in-sorted-array_1082549
+https://www.codingninjas.com/studio/problems/occurrence-of-x-in-a-sorted-array_630456
+https://www.codingninjas.com/studio/problems/occurrence-of-x-in-a-sorted-array_630456
+
+3.
