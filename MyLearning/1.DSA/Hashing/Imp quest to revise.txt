@@ -14,6 +14,7 @@ note it is for negative no. to if positive no then slidiing window will be most 
 
 7.https://leetcode.com/problems/continuous-subarray-sum/description/ not able to solve mmmmimpppp
 https://practice.geeksforgeeks.org/problems/longest-subarray-with-sum-divisible-by-k1259/1
+https://leetcode.com/problems/longest-well-performing-interval/description/
 
 8.https://practice.geeksforgeeks.org/problems/intersection-of-two-arrays2404/1
 follow up question

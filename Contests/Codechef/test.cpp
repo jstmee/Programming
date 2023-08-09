@@ -2,35 +2,38 @@
 #define int long long
 using namespace std;
 
-bool sortByVal(const pair<int, int>& a, const pair<int, int>& b){
-    if(a.first == b.first) return a.second < b.second;
-    
-    return a.first > b.first;
-}
-void myf(){
-    int n;cin>>n;
-    vector<int> v(n);
-    map<int,int> mp;
-    for(int i=0;i<n;i++){
-        cin>>v[i];
-        mp[v[i]]++;
-    }
 
-    vector<pair<int,int>> tempans;
-    for(auto it:mp){
-        tempans.push_back({it.second,it.first});
-    }
-    sort(tempans.begin(),tempans.end(),sortByVal);
-    for(auto it:tempans){
-        for(int i=0;i<it.first;i++){
-            cout<<it.second<<" ";
+void myf(){
+    string s;cin>>s;
+    int a=0,b=0;
+    int n=s.size();
+    for(int i=0;i<(int)s.size();i++){
+        if(s[i]<'a'){
+            a++;
+        }
+        else{
+            b++;
         }
     }
-    cout<<endl;
 
-    
-    
+    if(a>b){
+        for(int i=0;i<n;i++){
+            s[i]=toupper(s[i]);
 
+        }
+        cout<<s<<endl;
+
+
+    }
+    else{
+
+        for(int i=0;i<n;i++){
+            s[i]=tolower(s[i]);
+
+        }
+        cout<<s<<endl;
+
+    }
 
 }
 
@@ -41,8 +44,8 @@ int32_t main(){
            freopen("D:\\Programming\\C++ Programming\\input.txt","r",stdin);
            freopen("D:\\Programming\\C++ Programming\\output.txt","w",stdout);
     #endif
-    int t;
-    cin>>t;
+    int t=1;
+    // cin>>t;
     
     while(t--){
         myf();
