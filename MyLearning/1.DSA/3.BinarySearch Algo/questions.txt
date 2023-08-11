@@ -13,3 +13,5 @@ https://www.codingninjas.com/studio/problems/occurrence-of-x-in-a-sorted-array_6
 
 3.binary search on ans
 https://leetcode.com/problems/minimize-the-maximum-difference-of-pairs/
+
+4.https://leetcode.com/problems/single-element-in-a-sorted-array/description/
