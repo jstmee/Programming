@@ -1,0 +1,7 @@
+
+
+-var myName;//using var camelcase
+-When using camel case, you start by making the first word lowercase. Then, you capitalize the first letter of each word that follows.
+
+let fact; //same as var
+const FCC; //should be capitalize
