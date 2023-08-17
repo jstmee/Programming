@@ -4,6 +4,15 @@ using namespace std;
 
 
 void myf(){
+    vector<int> myarr={3,4,5,4,3,6};
+    map<int,int> mp;
+    for(auto it:myarr){
+        mp[it]++;
+    }
+    for(auto it:mp){
+        cout<<it.first<<" "<<it.second<<endl;;
+    }
+
 
 
 }
