@@ -1,0 +1,32 @@
+Please carefully read the test instructions provided in the email. The test focuses on your ability to think and plan. This is not a coding test. 
+
+See that you complete the test in 3 days, and send your attempt in the body of reply to our email.
+
+A MERN app has following functionality:
+Show a page to get email, and name if user is not logged in
+On submitting
+create user account if not there and log user in using jwt token. 
+Get confirmation to record entire Window, and webcam. 
+Get confirmation to record audio if possible
+On getting confirmation show a button start recording
+(***) On click of start recording (respond in Spanish)
+record webcam, and screen videos in browser's local storage or suggest an alternative for large files. 
+record audio as well if user gives permission. 
+save data that makes sense
+
+(***) On click of stop recording 
+show option to start recording
+save data that makes sense
+
+
+
+Candidates are getting rejected largely because of 2 reasons:
+1) Candidates use AI tools such as ChatGPT, which gives code for user authentication. ChatGPT fails to provide what we asked for. Candidates still send us the React and Node code without thinking that the test doesn't ask for it. We have stopped responding to such emails.
+2) Candidates misunderstand the requirements largely because they spend less time thinking through the instructions provided in the email. This test focuses on your ability to think and plan, and not on coding. 
+
+Witnessing numerous skilled professionals commit such errors and fall short of realizing their full potential is indeed disappointing. With that in mind, we offer our modest perspective on the use of AI tools.
+
+Our views on AI tools and how we use them internally:
+Our colleagues use AI tools only when they have reached to the level where they don't need to use any such tool. They can do the task themselves. Then they use it to accelerate their productivity.
+
+However, till the time, our junior colleagues are in learning phase, they don't use AI tools. Using ChatGPT prevents new learners from acquiring essential skills like critical thinking, top-down decomposition, planning, and debugging. These skills are crucial for tasks such as problem-solving, assembling components, and identifying and rectifying errors. Mastering these abilities is what sets humans apart from AI tools. Neglecting to cultivate these skills leaves one replaceable by AI tools.  
