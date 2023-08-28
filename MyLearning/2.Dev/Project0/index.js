@@ -1,5 +1,5 @@
 
-//key=6164946497:AAGsv8UO1gBc47j14BhNLjVsKK4NMoluEPI
+//key=
 
 
 const { Telegraf } = require('telegraf');
