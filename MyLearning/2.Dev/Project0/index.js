@@ -5,7 +5,7 @@
 const { Telegraf } = require('telegraf');
 const { message } = require('telegraf/filters');
 
-const bot = new Telegraf("6164946497:AAGsv8UO1gBc47j14BhNLjVsKK4NMoluEPI");
+const bot = new Telegraf("bottoken");
 
 bot.start((ctx) => ctx.reply('Welcome to my bot vishnu'));
 let template=`#include<bits/stdc++.h>
