@@ -1,0 +1,7 @@
+SQL/DBMS - https://github.com/kansiris/SQL-interview-questions
+
+Operating System - https://github.com/kaarthic/interview-preparation/blob/master/Operating%20System%20Interview%20Questions.md
+
+Networking - https://github.com/nairuzabulhul/.CodeBits/blob/master/InterviewQuestions/Top%20100%20Networking%20Interview%20Questions%20%26%20Answers.md
+
+OOP questions - https://github.com/Devinterview-io/oop-interview-questions 
