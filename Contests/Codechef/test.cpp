@@ -1,42 +1,32 @@
 #include<bits/stdc++.h>
 #define int long long
 using namespace std;
-/*
-10 19 7 1 17 11 8 5 12 9 4  18 14 2  6  15 3  16 13
-1  2  3 4 5  6  7 8 9 10 11 12 13 14 15 16 17 18 19
-*/
+
+//m+x*p<=n
 void myf(){
-    string a,b;cin>>a>>b;
+    int n,m,p;cin>>n>>m>>p;
+    int ans=0;
+    for(int i=0;i<=n;i++){
 
-    for(int i=1;i<a.size();i++){
-        if(a[i-1]=='0' && a[i]=='1' && b[i-1]=='0' && b[i]=='1'){
-            cout<<"YES"<<endl;return;
+        if(m+i*p<=n){
+            ans++;
         }
-        // cout<<"NO"<<endl;return;
     }
-    cout<<"NO"<<endl;return;
-
-
-    
-    
-    
+    cout<<ans<<endl;return;
 
 
 
-    
-
-
-
-
-    
 }
+
+
+
 int32_t main(){
     #ifndef ONLINE_JUDGE
            freopen("D:\\Programming\\C++ Programming\\input.txt","r",stdin);
            freopen("D:\\Programming\\C++ Programming\\output.txt","w",stdout);
     #endif
-    int t;
-    cin>>t;
+    int t=1;
+    // cin>>t;
     
     while(t--){
         myf();
