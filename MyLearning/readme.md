@@ -1,6 +1,6 @@
 # Future Storyline - One Piece by Gohdroger
 
-*Last updated: 18-FEB-2023 (Part 75)*
+*Last updated: 12-SEP-2023 (Part 88)*
 ***
 
 **Table of Contents**
@@ -799,7 +799,7 @@ The Ds are the direct descendants from the King.
 
 The Prophesized Time to open the Wanokuni's borders has arrived, which is signified by "reading" one of the two Strawhats. To read each Strawhat, it has to be first destroyed:
 
-https://imgur.com/gallery/R1GTkC6
+[Click to view](https://imgur.com/gallery/R1GTkC6)
 
 The current known people who can decide and read the ancient language are Nicole Robin and the awakened people from the Three Eye Tribe.
  
@@ -1085,6 +1085,189 @@ Roger was there, upon following the guidance of a Poneglyph, to collect an ancie
 
 Garp was deployed as part of an emergency to protect the World Nobles. The shipguards protecting the World Nobles have been disappearing one by one, getting nearer to where the ships of the World Nobles are. Fleet Admiral Kong gave order for Garp to set off.
 
-*Part 76 to be continued.*
+##### Part 76  (A Scientific Explanation of Chapter 1089 and Kuma's Death Pt. 1)
+
+Let us first refresh our memories from my previous posts (Parts 7 and 43, tweeted Q1 2023, if anyone wishes to read them again...) where I explained how and why water level rose drastically after the use of the ancient weapon during the void century. And how the adrupt seasons start to begin around the world.
+
+After over 10 thousand consecutive blasts from Uranus, the fresh water that was released swallowed up the fragmented land masses of the ancient super continent. These fragmented land masses that sank now formed a "new/secondary" seabed level, which is 10 thousand meters below the current sea level.
+
+(Filler: A giant air bubble was used to float an island and entrusted to protect important relics and a certain red poneglyph. Noah's Ark was used to pull the floated island to the current location beneathe Red Line. This floated island is thereafter known around the world as Fishman Island......)
+
+##### Part 77 (A Scientific Explanation of Chapter 1089 and Kuma's Death Pt. 2)
+
+I will now attempt to explain the "science" based on my source. Once again, this is something that Vegapunk will explain in the future so ignore me if my explanation is... not understandable hahas.
+
+Ok, back to the "new/secondary" seabed level - **Please refer to the childish diagram I drew**. This secondary seabed is still slightly above the original seabed.
+
+[Click to view](https://pbs.twimg.com/media/F2i8lWXbcAAHkL4?format=jpg&name=large)
+
+1. Lulusia's original location on the sea surface. 2. When Mother Flame was used to destroy Lulusia, the force of the blast created a cavity/hole beneathe where Lulusia originally was.
+3. Waters from the surrounding flow into this cavity/ hole because of water displacement. However, because of the "artificial" secondary seabed that was sunk and subsequently rested above the original seabed, there are air pockets / airways formed between the secondary seabed and the original seabed. Because the original seabed contains limestone, what this means is that the water flowing down from the sea surface (at Lulusia) towards the original seabed actually travels around/through the airways rather than seeping through the original seabed into the outer/inner cores.
+4. Water continues flowing along the airways and gets pumped out from other side of the globe. This water displacement phenomenon led to earthquakes felt around the world as well as water level rising.
+
+##### Part 77-2 (A Scientific Explanation of Chapter 1089)
+
+(This is a second follow-up post for Parts 77 and 77-1 as more PMs than expected.)
+
+The mechanics/science of the Mother Flame leading to "earthquakes" and "water falling into an abyss" has actually been drawn.
+
+Please take a look at the last few panels of Chapter 743 and the first few panels of Chapter 744.
+
+In Chapter 743, before Sabo used Dragon's Breath, he mentioned that everything in this world has a core. After blasting the ring floor, the core at the bottom is revealed and he traveled to this bottom core.
+
+This is similar to one of my previous parts where I wrote Luffy in the future will lower the water level around the world, globally, and bring everything and everyone back to the original core at the bottom of the current sea, where people once lived on.
+
+In Chapter 744, after Sabo destroyed the ring floor, water level at the surface fell into the abyss. Fire fist attack was also used by Sabo to reach the bottom core.
+
+This is similar to how the Mother Flame resulted in the destruction of a "landmass" and waterfalling into the abyss core.
+
+Thereafter, in Chapter 744 as well, upon reaching the core, light is finally shone on the darkness down there. Usopp is depicted as creating this "miracle" and hailed as a God.
+
+Similarly, when water level is finally lowered by Luffy in the future and light finally shines upon the original land below that has not seen the sun for 800 years, Luffy will be known throughout the world as a God and bringing (sun)light and miracle to everyone.
+
+##### Part 78 (A Scientific Explanation of Chapter 1089 and Kuma's Death Pt. 3)
+
+As mentioned in Part 13 (tweeted Q1 2023), the energy source that Imu possesses, is explicitly kept away from Vegapunk's knowledge. Because, and just as Dragon said, Vegapunk is a peace loving person and is impossible for him to build such a destructive technology for the World Government's usage. However, VP's love and admiration of ancient technology led him to study and replicate ancient power, which is then secretly leaked by York to WG.
+
+Pseudo Uranus' Mother Flame ability uses intense energy per blast and has to be cooled down immediately. This pseudo Uranus is now flying back to Mariejois underground ice chamber for maintenance till its next usage. Lulusia was chosen because the flying distance to and back the ice chamber is the shortest.
+
+(Random filler for future post: The next time Strawhat crew reaches Long Ring Long Run island again, they will have to turn the gears of the island.)
+
+##### Part 79 (A Scientific Explanation of Chapter 1089 and Kuma's Death Pt. 4)
+
+-- Back to Figarland Family first --
+
+As mentioned in Part 16 (tweeted Q1 2023), the Figarlands were the ones who initiated Imu to crown himself as the king of the world, and assisted in this quest to kingship.
+
+As such, the Figarlands are given a very special status even amongst the World Nobles - the right to judge other celestial dragons, the right to judge these "Gods". They have the rights to punish and experiment even on the bodies of the fallen Gods in an underground ice chamber experiment room. This room is part of a castle sailing in the New World.
+
+This castle is Thriller Bark. Thriller Bark is part of God Valley that comes from West Blue.
+
+With the full scale attack by the Rocks pirates and his fleet of pirates, together with the war with Garp army and Roger crew, the whole island was obliterated. (Read more from Parts 71 to 75)
+
+(In Part 73, I wrote that the pseudo Uranus was used on God Valley - this is a wrong info. God Valley was destroyed by the all out war that broke out there.)
+
+With the God Valley destroyed, the Figarland family no longer has any land to govern and as such, 38 years ago, Figarland Garling stepped down as king.
+
+##### Part 80 (Kuma's Death Part 1)
+
+As mentioned in my very first post Part 1, Kuma will die. I mentioned that this will happen around 15 chapters after posting Part 1. Around 17-18 chapters have passed since then. It is finally time to revisit this post again. Tribute to our beloved Bartholomew Kuma 🐻❤️
+
+Many has questioned then, how will Kuma arrive at Egghead, somehow dies, and Franky gets his fruit.
+
+Let's begin by understanding how Kuma's ability work, putting aside the more crazy stuffs like materialising his memory chip/bubble and making the intangibles into tangibles.
+
+Kuma's ability, at its very core, is the ability to displace. Displacing a physical object/human to a desired location occurs only in a straight line from Point A to Point B, via the shortest possible distance.
+
+The downside of this is that, if there is a tall object between Point A and Point B, the displaced object/ human will smack right into it.
+This is why, during the Sabaody Archipelago arc when Kuma sends the 9 strawhats to the various locations, all 9 locations are located within the first half of the Grand Line - Paradise, East Blue, and South Blue.
+
+Sending any of the Strawhats to any locations in the second half of the Grand Line will cause them to be directly smacked right into the Red Line.
+
+##### Part 81 (Kuma's Death Part 2)
+
+Out of all the Seraphims, only one original host was directly experimented on - Kuma.
+
+As mentioned in my Part 46, the ability to convert an intangible into tangible is very important to the current arc. Part of Kuma's consciousness and reasoning were embedded into S-bear.
+
+S-bear, out of all the current seraphims, is a very special one - it possesses subconscious connection with its original host. When the order was given to S-bear to displace itself and CPO to Egghead, Kuma himself picked up the order and hence displaced himself directly to Egghead as well.
+
+But alas, because Kuma is displacing himself from Kamabakka Kingdom (Paradise) to Egghead (New World), the Red Line that is ever so tall blocked Kuma's straight line travel.
+
+As a result, Kuma smacked into Red Line and had to climb up before continuing his final journey.
+
+##### Part 81-1 (Kuma's Death)
+
+Additional info for Part 81
+
+For those who wants more proof that Mariejois is not the destination - relook at Chapter 1071 again.
+
+Usually, once a displaced person arrives at the desired location, the person lands on the floor marked with a paw print.
+
+For Kuma's case, he crashed into the wall and fell to the floor. No paw print seen, either on wall or on floor - meaning travel journey halted halfway unexpectedly.
+
+##### Part 82 (Kuma's Death Part 3 (plus Imu's Flashback and Goddess of Earth))
+Further information for Chapter 1072 - Kuma's injury was picked up by some sensory sensors at Egghead. Which led to a sound being heard by Bonney, which in turn is how she discovered the Kuma room. In the same panel showing Kuma's memory bubble, a piechart depicting Kuma's health has been drawn as well. His current health is at 15%.
+
+Immediately after this panel, the next panel shows Vegapunk talking about how there is a theory that after a person dies, 21 gram of mass is lost. This theory will be validated by Vegapunk himself upon Kuma's own death... (prepare some tissue paper - Kuma's past, memories, flashbacks, and everything else will be revealed by both Vegapunk and Bonney).
+
+... ...
+
+(Flashback from Imu)
+
+800 years ago, the user of the Paw Paw Fruit during the void century is planning to scatter the Poneglyphs of Truth around the world. The user of this Paw Law Fruit during the void century was an ally of Joyboy.
+
+Imu was aware of this plan and ordered one of the 20 sovereigns to set sail and block all possible paths of travel (of the Poneglyphs).
+
+However, unbeknownst to Imu, this sovereign is a close friend of the giants. The giants owe a great debt to this sovereign for the sovereign's help. Through the king of the giants, the sovereign is made known of the truths of this world and of Imu's true intention. With this knowledge, a counterplan was erected (literally).
+
+##### Part 83 (Kuma's Death Part 4 (plus Imu's Flashback and Goddess of Earth))
+
+The counterplan by Imu was for this sovereign to erect a wall tall enough to capture all the flying Poneglyphs and thereafter, hide or even destroy all of them.
+
+However, the erecting of the wall was "delayed" by 1 hour by the sovereign. As a result, instead of having the wall erected in time to capture the Poneglyphs, many of the Poneglyphs instead managed to fly/ escape to the other ends of the world. With the wall erected ONLY AFTER many of the stones escaped, the wall ended up preventing Imu's allies from crossing it to retrieve the escaped stones.
+
+Knowing that this sovereign blundered up his plan, Imu decided to remove all history and existence of this sovereign.
+
+This sovereign, 800 years ago, was known as the Goddess of Earth.
+
+Also known as Queen Nefertari D. Lili.
+
+##### Part 84 (Kuma's Death Part 5)
+
+(Just to clarify on the previous few tweets - User of Paw Law Fruit and Lili are two different person)
+
+Back to present-
+
+Kuma will finally arrive at Egghead despite being heavily injured again at Mariejois because of the stupid wall.
+
+(Not even gonna attempt to estimate which chapter it will happen, the last time I guesstimated 15, it didn't happen 🤣)
+
+With Kuma's arrival, his backstory is finally revealed - from his childhood experiences, him being experimented on by WG, him joining RA, him going undercover, and his ultimate sacrifice to bring in the dawn of the world.
+
+One of the experiments being done on Kuma (before Vegapunk joins WG) was to see if it is possible to reverse the path taken by the displaced objects done by even previous users of the Paw Paw Fruit. So as to potentially reverse the escaped Poneglyphs back to where the current user desires.
+
+There are two storylines planned out that I am aware of, but I am not sure ultimately which storyline will prevail. What is common across these two storylines though, is that Kuma will die. I will share both storylines nonetheless.
+
+##### Part 85 (Kuma's Death Part 6)
+
+Storyline #1 (in my opinion the less exciting version):
+
+Upon Kuma's arrival at Egghead (if all goes as plan, should be by end Sep), Kuma will be commanded by Gorousei to attack the Strawhat crew. He will simply be a heartless killing war machine and attack all his enemies. Even his own daughter, Bonney.
+
+The final clash will be between Luffy and Kuma. Luffy will apologise to Bonney.
+
+Bonney will jump in front of Kuma to prevent Luffy from destroying what's left of her dad, because she still wishes to ask him a question.
+Kuma recalls who Bonney is, and stops attacking. Gorousei commands Seraphims to destroy the Strawhats... as well as Kuma. Because a machine that doesn't listen to his master's command is useless and as good as dead.
+
+Kuma takes the critical blow that is coming towards Bonney.
+
+One of the Vegapunks (most likely Stella) will explain a bit more on Kuma's ability, which is displacement, and on how Blackbeard is able to take Whitebeard's Gura Gura no Mi at Marineford.
+
+Vegapunk warned that time is of essence, and if they wish to inherit the will of Kuma as well as the will of the people from 900 years ago, someone must take over Kuma's ability.
+
+Franky officially inherits Kuma's ability.
+
+##### Part 86 (Laugh Tale and Gol D. Roger Pt. 2 - The Lies within Oden's Logbook)
+
+(This is an edit to Part 41 based on latest information I just received.)
+
+Upon knowing the whole history as well as hearing the final recordings of Dyras, the Roger crew all cried. There was 0 laughter unlike what was recorded in Oden's Logbook.
+
+The first part of the final page of Oden's Logbook contains the following words:
+
+"We set foot on the final island that lies beneath the sea thousands of feet below. But alas we were too early and the King's Keys are not yet ready. We were not able to proceed further."
+
+The Roger's Crew left the island of "Laugh" Tale without knowing what the One Piece actually is.
+
+##### Part 87 (The Man with the Flame Burns)
+
+Short spoiler: The man marked with scars of flame is confirmed to be Jaguar D. Saul. 100%.
+
+##### Part 88 (The Final Red Poneglyph)
+
+Another short spoiler I received recently: It will not be on Elbaf. It will be immediately after Elbaf.
+
+*Part 89 to be continued.*
 
 -> [Back to top](https://rentry.co/op-future-storyline#future-storyline-one-piece-by-gohdroger) ->
