@@ -44,5 +44,7 @@ note most efficent will be n^2
 19.https://www.geeksforgeeks.org/print-words-together-set-characters/
 
 
+20.https://leetcode.com/problems/find-common-characters/description/
 
+21.https://leetcode.com/problems/longest-consecutive-sequence/description/
 
