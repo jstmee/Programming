@@ -1,5 +1,29 @@
 
+I spent 2000+ hours in 2023 for YOU
+Building Roadmaps to Become Software Developer End to End.
 
+This is a compilation of all those useful roadmaps, videos with the resources. It covers everything from DSA to Full Stack Development.
+
+More than 100k+ users have used these resources in this year.
+
+DSA Links:
+1. DSA - 251 Roadmap - https://lnkd.in/gnjk37yU
+2. Company Wise DSA Roadmap - https://lnkd.in/gRjy-ThJ
+3. How to make DSA Notes - https://lnkd.in/gwiYZte9
+4. How Not to Learn DSA? - https://lnkd.in/gYeJ7CFT
+5. Master DSA in 100 Days - https://lnkd.in/gGsXcJQY
+6. Algorithms (Recursion,DP, Binary Search) Roadmap - https://lnkd.in/gJjTckXf
+
+Full Stack Development Links:
+1. Complete Full Stack Development Roadmap - https://lnkd.in/dKgyjKAc
+2. Complete Frontend Development Roadmap - https://lnkd.in/gFqf2cuG
+3. Fastest Way to Learn Frontend Development -https://lnkd.in/gkuAKwVi
+4. Best Project Ideas for Full Stack Development - https://lnkd.in/gMpXeUqk
+5. How Not To Learn Full Stack Development - https://lnkd.in/gP7kTBKE
+6. Company Wise Frontend Dev Roadmap - https://lnkd.in/gKhH_jmH
+7. Company Wise Backend Dev Roadmap - https://lnkd.in/g85RzHrP
+8. Complete Backend Development Roadmap - https://lnkd.in/gGNBdy76
+9. React Roadmap - https://lnkd.in/gqKyuqQm
 
 
 //striver

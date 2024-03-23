@@ -4,24 +4,41 @@ using namespace std;
 
 
 void myf(){
-
-    vector<int> v1={23, 4,5 ,101};
-    vector<int> v2={21,1,10, 100};
-
-    vector<vector<int>> dp(104,vector<int> (2,0));
-    dp[0][0]=v1[0];
-    dp[0][1]=v2[0];
-
-    // int ans=solve(0,v1,v2);
-
-    for(int i=1;i<4;i++){
-        dp[i][0]=max(v1[i]+dp[i-1][0],v1[i]+dp[i-2][1]);
-        dp[i][1]=max(v2[i]+dp[i-1][1],v2[i]+dp[i-2][0]);
-
+    int n,k;cin>>n>>k;
+    // cout<<n<<k<<endl;
+    vector<int> v(n);
+    int mod=1e9+7;
+    for(int i=0;i<n;i++){
+        cin>>v[i];
     }
-    cout<<max(dp[3][0],dp[3][1])<<endl;
-    cout<<5<<endl;
+    int ans=0;
+    int sum=0;
+    for(int i=0;i<n;i++){
+        int tt=max((sum+v[i])%mod,v[i]%mod);
+        sum=tt;
+        ans=max(ans%mod,sum%mod);
+    }
     // cout<<ans<<endl;
+    // int p=1;
+    int pp=ans;
+    int nans=0;
+    for(int i=0;i<k;i++){
+        // nans+=(pp);
+        nans=(nans+pp)%mod;
+        pp=(pp+nans)%mod;
+    }
+    // cout<<nans<<endl;
+    int tsum=0;
+    for(auto it:v){
+        // tsum+=it;
+        tsum=(tsum+it)%mod;
+    }
+    
+    cout<<((nans%mod+tsum%mod)%mod+mod)%mod<<endl;
+
+
+
+
 
 
 }
@@ -33,8 +50,8 @@ int32_t main(){
            freopen("D:\\Programming\\C++ Programming\\input.txt","r",stdin);
            freopen("D:\\Programming\\C++ Programming\\output.txt","w",stdout);
     #endif
-    int t=1;
-    // cin>>t;
+    int t;
+    cin>>t;
     
     while(t--){
         myf();

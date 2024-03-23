@@ -1,22 +1,86 @@
-// Associativity is not used in the below program.
-// Output is compiler dependent.
+#include<bits/stdc++.h>
+#define int long long
+using namespace std;
 
-#include <stdio.h>
 
-int x = 0;
-int f1()
-{
-	x = 5;
-	return x;
+bool comp(string s1, string s2){
+         
+         if(s1.size()<s2.size()){
+             // return true;
+             return s1<s2;
+         }
+         return s1<s2;
+         
+    }
+vector<string> shortestSubstrings(vector<string>& arr) {
+        
+        int n=arr.size();
+        vector<string> ans(n,""); 
+        for(int i=0;i<n;i++){//100
+            string pp=arr[i];
+            int sz=pp.size();
+            vector<string> a;
+            for(int j=0;j<sz;j++){//20
+                
+                string s="";
+                
+                for(int k=j;k<sz;k++){//20
+                    s.push_back(pp[k]);
+                    bool check=false;
+                    for(int l=0;l<n;l++){//20
+                        if(i!=l){
+                            if(arr[l].find(s)!=string::npos){//20
+                                check=true;
+                            }
+                        }
+                    }
+                    if(check==false){
+                        a.push_back(s);
+                    }                  
+                    
+                    
+                    
+                }
+                                 
+            }
+            sort(a.begin(),a.end(),comp);
+                if(a.size()==0){
+                    ans[i]="";
+                }             
+                else{
+                    ans[i]=a[0];
+                } 
+            
+        }
+        return ans;
+    }
+
+void myf(){
+
+    vector<string> arr={"gfnt","xn","mdz","yfmr","fi","wwncn","hkdy"};
+
+    vector<string> p=shortestSubstrings(arr);
+    for(auto it:p){
+        cout<<it<<" ";
+    }
+    cout<<endl;
+
+
+
 }
-int f2()
-{
-	x = 10;
-	return x;
-}
-int main()
-{
-	int p = f1() + f2();
-	printf("%d ", x);
-	return 0;
+
+
+
+int32_t main(){
+    #ifndef ONLINE_JUDGE
+           freopen("D:\\Programming\\C++ Programming\\input.txt","r",stdin);
+           freopen("D:\\Programming\\C++ Programming\\output.txt","w",stdout);
+    #endif
+    int t=1;
+    // cin>>t;
+    
+    while(t--){
+        myf();
+    }
+    return 0;
 }
