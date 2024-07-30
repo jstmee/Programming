@@ -1,106 +1,66 @@
 #include<bits/stdc++.h>
-
 #define int long long
 using namespace std;
 
-/*
-
-given beuatifull arrray a1 a2...
-
-return min no of element to remove for not it to beuatufull
-
-5-3
-2
-
-5
-1 2 1 2 1
 
 
-*/
-void myf() {
-
-    int n;cin>>n;
-    vector<int> v(n);
+void myf(){
+    int n,m;cin>>n>>m;
+    vector<int> v1(n),v2(m);
     for(int i=0;i<n;i++){
-        cin>>v[i];
+        cin>>v1[i];
     }
-    if(n==1){
-        cout<<-1<<endl;
-        return;
+    for(int i=0;i<m;i++){
+        cin>>v2[i];
     }
-    if(n==2){
-        if(v[0]!=v[1]){
-            cout<<0<<endl;
-            return;
+    vector<int> temp1;
+    int ans=0;
+    int j=0,k=0;
+    for(int i=0;i<m;i++){
+        int num=v2[i];
+        while(j<n and v1[j]<num){
+            j++;
         }
-        else{
-            cout<<-1<<endl;
-            return;
-        }
-    }
+        // temp1.push_back(j);
 
-    if((v[0]!=v[1] and v[0]!=v[2]) or (v[n-1]!=v[n-2] and v[n-1]!=v[n-3])){
-        cout<<0<<endl;
-        return;
-    }
+        while(k<n and v1[k]<=num){
+            k++;
+        }
+        ans+=(k-j);
 
-    int ans=INT_MAX;
-    for(int i=0;i<n-1;i++){
-        if(i!=0 and v[i]!=v[i-1]){
-            // v[i]=v[i-1];
-            ans=min(ans,i);
-            break;
-        }
-    }
-    for(int i=n-1;i>=1;i--){
-        if(i!=n-1 and v[i]!=v[i+1]){
-            ans=min(ans,n-i-1);
-        }
-    }
-    if(ans==INT_MAX){
-        cout<<-1<<endl;
-        return;
+
     }
     cout<<ans<<endl;
-
-
-
-    
-
-
-
-    
-
-
-
-
-
-
-    
-    
-    
-
+    // vector<int> temp2;
+    // j=n-1;
+    // for(int i=m-1;i>=0;i--){
+    //     int num=v2[i];
+    //     while(j>=0 and v1[j]>num){
+    //         j--;
+    //     }
+    //     temp2.push_back(m-j);
+    // }
+    // reverse(temp2.begin(),temp2.end());
+    // int sum=0;
+    // for(int i=0;i<m;i++){
+    //     sum+=(n-(temp1[i]+temp2[i]));
+    // }
+    // cout<<sum<<endl;
     
 }
 
-int32_t main() {
-
-    ios_base::sync_with_stdio(false); 
-    cin.tie(NULL);
 
 
-
+int32_t main(){
     #ifndef ONLINE_JUDGE
-        freopen("D:\\Programming\\C++ Programming\\input.txt","r",stdin);
-        freopen("D:\\Programming\\C++ Programming\\output.txt","w",stdout);
+           freopen("D:\\Programming\\C++ Programming\\input.txt","r",stdin);
+           freopen("D:\\Programming\\C++ Programming\\output.txt","w",stdout);
     #endif
-
-    int t;
-    t=1;
-    cin>>t;
-    while(t--) {
+    int t=1;
+    // cin>>t;
+    
+    while(t--){
         myf();
     }
-
     return 0;
 }
